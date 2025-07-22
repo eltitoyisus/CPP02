@@ -14,7 +14,6 @@
 #include "Point.hpp"
 
 bool bsp( Point const a, Point const b, Point const c, Point const point);
-std::string drawTriangle(Point const a, Point const b, Point const c, Point const p);
 
 int	main(void) {
 	Point a(0, 0);
@@ -22,8 +21,6 @@ int	main(void) {
 	Point c(0, 10);
 
 	Point point(6, 5);
-	std::cout << "Triangle to draw: " << std::endl;
-	std::cout << drawTriangle(a, b, c, point) << std::endl;
 	std::cout << "Result: " << std::endl;
 	std::cout << bsp(a, b, c, point) << std::endl;
 	return 0;
